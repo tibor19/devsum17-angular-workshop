@@ -1,4 +1,6 @@
-﻿body, header, footer, nav, .container, .content {
+/* You can add global styles to this file, and also import other style files */
+
+body, header, footer, nav, .container, .content {
     margin: 0;
     padding: 0;
     border: 0;
@@ -12,22 +14,8 @@ body {
     background-attachment: scroll;
 }
 
-header {
-    text-align: center;
-    width: 600px;
-    padding: 10px;
-    border: 1px dotted #725972;
-    background-image: url('data:image/gif;base64,R0lGODlhUABQAIAAAMeux9i/2CH5BAAAAAAALAAAAABQAFAAAALmjI8ZoO0PI2Ky2ovzpbpj7oViyJTLaZrj2qQnC8fyTNf2jef6Lrs+CgTxhsQPifcrKh1C407YXC6jFioNKs0erBJuL6jVeg2/MngcTlcrUTT5qi6i2xt4fDhv1WfuOyuv0NcXkeSHA5ggaGeYY+b4wrbIGDao96CyZ4g5NVIZOZnmmSgJKiU6UZrq8ciq6voKGys7SwtaWIub+bbWepurhLW2+pvlC3EKSRyLjKxseuQ82Zt8KQcWLTzaZY3dQbcN7dSd8U0o4tnsXH7MdOauO56NCj5MHm8/7RIOf+8t3d/pH8AEBQAAOw==') /*/content/Images/masthead.gif*/;
-    background-repeat: repeat;
-    background-attachment: scroll;
-}
 
-footer {
-    text-align: center;
-    clear: both;
-    width: 618px;
-    border: 1px dotted #d8bfd8;
-}
+
 
 a {
     color: #402640;
@@ -55,52 +43,9 @@ article {
     margin-left: 10px;
 }
 
-/* Navigation Styles */
-nav ul {
-    list-style-type: none;
-    width: 100%;
-    display: block;
-    margin: 0;
-    padding: 0;
-}
 
-nav li {
-    display: block;
-    margin: 0;
-    padding: 0;
-    border: 1px dotted #dfb8df;
-    background-color: #dfb8df;
-}
 
-nav a {
-    color: #402640;
-    text-decoration: none;
-    display: block;
-    padding: 5px;
-    border-bottom: 1px dotted #fff;
-    background-color: #dfb8df;
-}
 
-nav a:hover {
-    color: #402640;
-    text-decoration: none;
-    background-color: #fff;
-}
-
-/* Footer Styles */
-footer p {
-    color: #808080;
-}
-
-footer a {
-    color: #503750;
-    text-decoration: underline;
-}
-
-footer a:hover {
-    color: #402640;
-    text-decoration: none;
-}
 
 .splash {
     text-align: center;

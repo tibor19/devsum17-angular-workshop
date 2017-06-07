@@ -1,0 +1,22 @@
+
+footer {
+    text-align: center;
+    clear: both;
+    width: 618px;
+    border: 1px dotted #d8bfd8;
+}
+
+/* Footer Styles */
+footer p {
+    color: #808080;
+}
+
+footer a {
+    color: #503750;
+    text-decoration: underline;
+}
+
+footer a:hover {
+    color: #402640;
+    text-decoration: none;
+}

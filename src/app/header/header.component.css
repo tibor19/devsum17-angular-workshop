@@ -1,0 +1,9 @@
+header {
+    text-align: center;
+    width: 600px;
+    padding: 10px;
+    border: 1px dotted #725972;
+    background-image: url('data:image/gif;base64,R0lGODlhUABQAIAAAMeux9i/2CH5BAAAAAAALAAAAABQAFAAAALmjI8ZoO0PI2Ky2ovzpbpj7oViyJTLaZrj2qQnC8fyTNf2jef6Lrs+CgTxhsQPifcrKh1C407YXC6jFioNKs0erBJuL6jVeg2/MngcTlcrUTT5qi6i2xt4fDhv1WfuOyuv0NcXkeSHA5ggaGeYY+b4wrbIGDao96CyZ4g5NVIZOZnmmSgJKiU6UZrq8ciq6voKGys7SwtaWIub+bbWepurhLW2+pvlC3EKSRyLjKxseuQ82Zt8KQcWLTzaZY3dQbcN7dSd8U0o4tnsXH7MdOauO56NCj5MHm8/7RIOf+8t3d/pH8AEBQAAOw==') /*/content/Images/masthead.gif*/;
+    background-repeat: repeat;
+    background-attachment: scroll;
+}
