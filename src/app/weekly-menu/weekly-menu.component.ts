@@ -80,6 +80,7 @@ export class WeeklyMenuComponent implements OnInit {
     "recipeIngredients": [],
     "recipeInstructions": []
   }];
+  weekDays = ['Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday', 'Saturday', 'Sunday'];
   constructor() { }
 
   ngOnInit() {

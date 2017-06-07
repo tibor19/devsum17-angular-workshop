@@ -2,13 +2,13 @@
 
   <h2>Weekly Menu</h2>
 
-  <div class="box" *ngFor="let recipe of recipes">
+  <div class="box" *ngFor="let recipe of recipes; let odd = odd; let index = index">
     <a href="#/recipe/{{recipe.recipeId}}">
-      <div class="box-content float-right">
-        <h2>Monday</h2>
+      <div [ngClass]="{'box-content': true, 'float-right': odd, 'float-left': !odd}">
+        <h2>{{weekDays[index % 7]}}</h2>
         <h4>{{recipe.name}}</h4>
       </div>
-      <div class="box-image float-left">
+      <div [ngClass]="{'box-image': true, 'float-left': odd, 'float-right': !odd}">
         <img src="content/images/food/{{recipe.image}}.jpg" width="200" height="120" alt="Recipe Image">
       </div>
     </a>
