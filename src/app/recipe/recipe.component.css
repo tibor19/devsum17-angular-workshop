@@ -1,0 +1,10 @@
+.ingredients-list{
+    list-style-type:none;
+    margin:5px;
+}
+
+.instructions-list {
+    list-style-type:decimal;
+    margin:15px;
+}
+

@@ -1,1 +1,32 @@
 /* You can add global styles to this file, and also import other style files */
+body, header, footer, nav, .container, .content {
+    margin: 0;
+    padding: 0;
+    border: 0;
+}
+
+body {
+    font-family: "Trebuchet MS", Arial, Helvetica, sans-serif;
+    font-size: 0.8em;
+    background-image: url("/content/images/bg-spaghetti.jpg");
+    background-repeat: repeat;
+    background-attachment: scroll;
+}
+
+a {
+    color: #402640;
+    text-decoration: underline;
+}
+
+a:hover {
+    color: #dfb8df;
+    text-decoration: underline;
+}
+
+article {
+    float: left;
+    width: 470px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    margin-left: 10px;
+}

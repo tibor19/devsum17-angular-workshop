@@ -5,7 +5,7 @@ import { Observable } from 'rxjs/Observable';
 @Component({
   selector: 'app-weekly-menu',
   templateUrl: './weekly-menu.component.html',
-  styleUrls: ['./weekly-menu.component.css']
+  styleUrls: ['./weekly-menu.component.css', '../box.css']
 })
 export class WeeklyMenuComponent implements OnInit {
 

@@ -1,0 +1,43 @@
+/* other styles */
+.box {
+    border: thin dashed #C0C0C0;
+    width: 460px;
+    margin-bottom: 10px;
+    height: 140px;
+}
+
+.big-box {
+    border: thin dashed #C0C0C0;
+    width: 430px;
+    margin-bottom: 10px;
+    padding: 10px;
+}
+
+.box-image {
+    width: 210px;
+    margin-left: 10px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+.box-content {
+    width: 220px;
+    margin-left: 10px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+.recipe-image {
+    height:120px;
+    width:200px;
+    border:1px solid Black;
+}
+
+.float-right {
+    float: right;
+}
+
+.float-left {
+    float: left;
+}
+

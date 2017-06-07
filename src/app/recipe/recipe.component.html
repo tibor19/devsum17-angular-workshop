@@ -1,5 +1,5 @@
 <article>
-  <div>
+  <div *ngIf="recipe">
     <h2>{{recipe.name}}</h2>
 
     <div class="box">
@@ -7,7 +7,7 @@
         <table>
           <tr>
             <td class="style_bold">Price:</td>
-            <td>$2</td>
+            <td>{{recipe.price | currency}}</td>
           </tr>
           <tr>
             <td class="style_bold">Cooking Time:</td>
@@ -20,14 +20,14 @@
       </div>
     </div>
     <h3>Ingredients</h3>
-    <ul class="ingredientsList">
+    <ul class="ingredients-list">
       <li>2 Portions of Fish sticks</li>
       <li>2 Portions of Rice</li>
       <li>Mayonaise</li>
       <li>Water</li>
     </ul>
     <h3>Instructions</h3>
-    <ol>
+    <ol class="instructions-list">
       <li>Follow instructions on rice package to make rice</li>
       <li>Fry fish sticks</li>
       <li>Plate and serve with mayo</li>
