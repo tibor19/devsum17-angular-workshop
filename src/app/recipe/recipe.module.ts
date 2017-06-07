@@ -3,12 +3,13 @@ import { CommonModule } from '@angular/common';
 import { HomeComponent } from '../home/home.component';
 import { WeeklyMenuComponent } from '../weekly-menu/weekly-menu.component';
 import { RecipeComponent } from './recipe.component';
+import { RecipeImagePipe } from '../pipes/recipe-image.pipe';
 
 @NgModule({
   imports: [
     CommonModule
   ],
-  declarations: [HomeComponent, WeeklyMenuComponent, RecipeComponent],
+  declarations: [HomeComponent, WeeklyMenuComponent, RecipeComponent, RecipeImagePipe],
   exports: [HomeComponent, WeeklyMenuComponent, RecipeComponent]
 })
 export class RecipeModule { }
