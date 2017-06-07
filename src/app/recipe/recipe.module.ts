@@ -4,12 +4,14 @@ import { HomeComponent } from '../home/home.component';
 import { WeeklyMenuComponent } from '../weekly-menu/weekly-menu.component';
 import { RecipeComponent } from './recipe.component';
 import { RecipeImagePipe } from '../pipes/recipe-image.pipe';
+import { RecipeService } from '../services/recipe.service';
 
 @NgModule({
   imports: [
     CommonModule
   ],
   declarations: [HomeComponent, WeeklyMenuComponent, RecipeComponent, RecipeImagePipe],
-  exports: [HomeComponent, WeeklyMenuComponent, RecipeComponent]
+  exports: [HomeComponent, WeeklyMenuComponent, RecipeComponent],
+  providers: [RecipeService]
 })
 export class RecipeModule { }
