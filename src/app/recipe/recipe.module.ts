@@ -8,6 +8,7 @@ import { RecipeComponent } from './recipe.component';
   imports: [
     CommonModule
   ],
-  declarations: [HomeComponent, WeeklyMenuComponent, RecipeComponent]
+  declarations: [HomeComponent, WeeklyMenuComponent, RecipeComponent],
+  exports: [HomeComponent, WeeklyMenuComponent, RecipeComponent]
 })
 export class RecipeModule { }
