@@ -1,4 +1,8 @@
 import { Injectable } from '@angular/core';
+import { Observable } from 'rxjs/Observable';
+import 'rxjs/Rx';
+
+import { Http } from '@angular/http';
 
 export interface IRecipe{
     recipeId: number;
@@ -13,10 +17,17 @@ export interface IRecipe{
 @Injectable()
 export class RecipeService {
 
-  constructor() { }
+  constructor(private http: Http) { }
 
-  getRecipes() : IRecipe[] {
-    return [{
+  getRecipes() : Observable<IRecipe[]> {
+    return this.http.get('content/data/recipies.json').map(respose => {
+      if (respose.status === 200) {
+        return respose.json();
+      }
+    });
+    /* 
+      to return an observable, we can just do this:
+      return Observable.of([{
       "recipeId": 1,
       "name": "Fish sticks and Rice",
       "price": 2.0,
@@ -88,7 +99,7 @@ export class RecipeService {
       "image": "icecream-clip",
       "recipeIngredients": [],
       "recipeInstructions": []
-    }];
+    }]); */
   }
 
   getRecipe(id: number) : IRecipe {

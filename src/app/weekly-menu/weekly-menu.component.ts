@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { IRecipe, RecipeService } from '../services/recipe.service';
+import { Observable } from 'rxjs/Observable';
 
 @Component({
   selector: 'app-weekly-menu',
@@ -13,7 +14,7 @@ export class WeeklyMenuComponent implements OnInit {
   constructor(private recipeService: RecipeService) { }
 
   ngOnInit() {
-    this.recipes = this.recipeService.getRecipes();
+    this.recipeService.getRecipes().subscribe(data => {this.recipes = data;});
   }
 
 }
