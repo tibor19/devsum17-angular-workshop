@@ -1,6 +1,7 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
 
+import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { HeaderComponent } from './header/header.component';
 import { FooterComponent } from './footer/footer.component';
@@ -16,7 +17,7 @@ import { RecipeModule } from './recipe/recipe.module';
     NavComponent
   ],
   imports: [
-    BrowserModule, RecipeModule
+    AppRoutingModule, BrowserModule, RecipeModule
   ],
   providers: [],
   bootstrap: [AppComponent]

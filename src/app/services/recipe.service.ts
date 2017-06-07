@@ -102,8 +102,14 @@ export class RecipeService {
     }]); */
   }
 
-  getRecipe(id: number) : IRecipe {
-    return {
+  getRecipe(id: number) : Observable<IRecipe> {
+    console.log(id);
+    return this.http.get('content/data/recipe.json').map(respose => {
+      if (respose.status === 200) {
+        return respose.json();
+      }
+    });
+    /* return {
       "recipeId": 1,
       "name": "Fish sticks and Rice",
       "price": 2.0,
@@ -157,7 +163,7 @@ export class RecipeService {
         "recipeInstructionId": 3,
         "instructionText": "Plate and serve with mayo"
       }]
-    };
+    };*/
   }
 
 }
